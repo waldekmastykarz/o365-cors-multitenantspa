@@ -1,0 +1,11 @@
+# system files
+**/.DS_Store
+
+# package files
+**/node_modules
+
+# TypeScript type definitions
+**/typings/*/*.d.ts
+
+# Sessions
+**/sessions
