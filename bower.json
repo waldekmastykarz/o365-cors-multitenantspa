@@ -1,0 +1,20 @@
+{
+  "name": "o365-cors-multitenantspa2",
+  "version": "0.1.0",
+  "main": "server.js",
+  "authors": [
+    { "name": "Waldek Mastykarz", "homepage": "http://blog.mastykarz.nl" }
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "knockoutjs": "~3.3.0"
+  }
+}

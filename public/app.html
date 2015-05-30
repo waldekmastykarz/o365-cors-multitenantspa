@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>Multitenant CORS SPA</title>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/knockoutjs/dist/knockout.js"></script>
+<script src="/lib/adal/adal.js"></script>
+</head>
+<body>
+    <!-- ko if: isAuthenticated() -->
+        <div>
+            <button data-bind="click: getSiteTitle">Get site title</button><br /><br />
+        </div>
+        
+        <!-- ko if: loading() === true -->
+        <div>
+            <span>Loading site title...</span>
+        </div>
+        <!-- /ko -->
+        
+        <!-- ko if: error().length > 0 -->
+        <div>
+            The following error occured while loading the site title: <span data-bind="text: error"></span>
+        </div>
+        <!-- /ko -->
+        
+        <!-- ko if: loading() === false && finishedLoading() && error().length === 0 -->
+        <div>
+            Site title: <span data-bind="text: siteTitle"></span>
+        </div>
+        <!-- /ko -->
+    <!-- /ko -->
+    <!-- ko if: isAuthenticated() === false -->
+        <div class="padding">
+            <a data-bind="click: login" href="#">Login with Office 365</a>
+        </div>
+    <!-- /ko -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

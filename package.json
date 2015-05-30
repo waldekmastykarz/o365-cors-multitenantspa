@@ -1,0 +1,21 @@
+{
+  "name": "o365-cors-multitenantspa2",
+  "version": "0.1.0",
+  "description": "Sample SPA showing how to use CORS with Discovery Service with multi-tenant applications.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name" : "Waldek Mastykarz",
+    "url" : "http://blog.mastykarz.nl/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.3.5",
+    "express": "^4.12.4",
+    "express-session": "^1.11.2",
+    "q": "^1.4.1",
+    "session-file-store": "0.0.11"
+  }
+}
